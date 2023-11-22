@@ -1,0 +1,47 @@
+@include media-breakpoint-up(sm) {
+    div.event-list {
+        width: 80%;
+        margin: 0 auto;
+
+        div.event-item {
+            div.card {
+                margin: 1em;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+header {
+    margin-top: 1em;
+}
+
+
+div.event-page {
+    .new-event::after {
+        content: "NEW";
+        color: rgb(245 31 74);
+        padding: 2px 5px;
+        margin-left: 0.5em;
+        font-weight: 500;
+    }
+
+    .event-detail {
+        p {
+            margin-bottom: 1em;
+        }
+    }
+
+    .event-date,
+    .event-location,
+    .event-body {
+        margin-top: 2em;
+
+        label {
+            width: fit-content;
+            background: linear-gradient(transparent 70%, #a7d6ff 70%);
+            margin-bottom: 0.5em;
+        }
+
+    }
+}
